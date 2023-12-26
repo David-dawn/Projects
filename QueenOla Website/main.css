@@ -1,0 +1,288 @@
+
+body{
+    background: linear-gradient(to bottom, rgb(204, 229, 255), rgba(204, 229, 255, 0.4))
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    position: relative;
+    color: lightseagreen;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    }
+    
+
+
+header{
+    position: none;
+    top: 0;
+    min-height: 95px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    text-transform: capitalize;
+   }
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav > ul {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black)
+}
+
+
+.header .logo i{
+    color: var(--primary-color);
+    padding-right: .5rem;
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+    padding-block: 1rem;
+    justify-content: space-between;
+}
+
+
+.header .nav-bar a:hover{
+    color: green;
+}
+
+.header .navbar .hover-underline{
+    position: relative;
+    max-width: max-content;
+}
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+.header .icons div:hover{
+    color: var(--primary-color);
+}
+
+
+#menu-btn{
+    display: none;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 115%; right: -105%;
+    background: black;
+    box-shadow: .5rem;
+    width: 35rem;
+    box-shadow: black;
+    padding: 2rem;
+}
+
+
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: .7rem;
+}
+
+
+/*home */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/images/office-buildings.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-transform: capitalize;
+}
+
+.home .content{
+    max-width: 40rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    line-height: 1.2;
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home .content p{
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 2;
+    color: rgb(36, 241, 228);
+    padding: 1rem 0;
+}
+/* ends */
+
+/* about */
+
+.about .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .container .about-image{
+    position: relative;
+    flex: 1 1 40rem;
+}
+
+.about .container .about-image .img{
+    position: relative;
+    bottom: -40rem;
+    right: -11rem;
+    width: 95rem;
+    padding-block: 5rem;
+}
+
+
+.about  .about-content{
+    flex: 1 1 50rem;
+    padding-left: 6rem;
+    padding-top: 6rem;
+}
+
+.about  .about-content h3{
+    font-size: 3rem;
+    color: lightseagreen;
+    text-transform: capitalize;
+}
+
+.about .about-content p{
+    font-size: 1.6rem;
+    color: #444;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* service */
+
+#service{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 0px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 5px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > h2 {
+    margin-top: 15px;
+}
+
+.product > ol {
+    margin: 15px 0;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+    font-weight: bolder;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.product > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+/* ends */
+
+/* contact */
+#contact{
+    margin-top: 80px;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+/* ends */
+
+/* footer */
+
+footer{
+ margin-top: 30px;
+ background-color: #ddd;
+ padding: 20px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
